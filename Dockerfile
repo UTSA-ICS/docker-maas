@@ -3,7 +3,7 @@ MAINTAINER Farhan Patwa <farhan.patwa@utsa.edu>
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get -y install \
-        software-properties-common && \
+        software-properties-common python3-pip && \
     apt-get -qq autoremove -y --purge && \
     apt-get -qq clean && \
     rm -rf /var/lib/apt/lists* /tmp/* /var/tmp/*
